@@ -1,0 +1,60 @@
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color:rgba(40,40,40,1);
+    display: table;
+    font-weight: 100;
+    font-family: 'Lato';
+}
+i{
+  text-decoration: none;
+  font-style: normal;
+}
+.sidebar{
+  text-align: center;
+  display: table-row;
+  width: 100%;
+  height: 2em;
+  vertical-align: middle;
+}
+.container {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.content {
+    text-align: center;
+    /*display: inline-block;*/
+}
+
+.title {
+    font-size: 96px;
+    margin-bottom: 40px;
+    color: rgba(93,101,105,1);
+}
+
+.quote {
+    font-size: 24px;
+    color: rgba(93,101,105,1);
+}
+
+a{
+  text-decoration: none;
+  color: rgba(106,168,79,.6);
+  font-weight: 100;
+  font-family: 'Lato','Roboto Mono';
+}
+a:hover{
+  color: rgba(106,168,79,1);
+}

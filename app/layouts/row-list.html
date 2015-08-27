@@ -14,12 +14,11 @@
     <div class="col-md-10">
       <!--Body content-->
 
-      <ul class="phones">
-        <li ng-repeat="row in rows | filter:query | orderBy:orderProp"
-            class="thumbnail row-listing">
-          <a href="#/rows/{{row.id}}" class="thumb"><img ng-src="{{row.imageUrl}}"></a>
-          <a href="#/rows/{{row.id}}">{{row.name}}</a>
-          <p>{{phone.snippet}}</p>
+      <ul class="rows">
+        <li ng-repeat="row in rows | filter:query | orderBy:orderProp" class="thumbnail row-listing">
+          <a href="#/rows/{{row.id}}" class="thumb"><img ng-src="{{row.icon}}"/></a>
+          <a href="#/rows/{{row.id}}">{{row.owner}}</a>
+          <p>{{row.timeStarted}}</p>
         </li>
       </ul>
 

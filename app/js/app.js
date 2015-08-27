@@ -10,11 +10,11 @@ var crossoverApp = angular.module('crossoverApp', [
   'crossoverServices'
 ]);
 
-phonecatApp.config(['$routeProvider',
+crossoverApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/rows', {
-        templateUrl: 'layouts/phone-list.html',
+        templateUrl: 'layouts/row-list.html',
         controller: 'RowListCtrl'
       }).
       otherwise({

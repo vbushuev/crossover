@@ -4,7 +4,7 @@
 
 var crossoverControllers = angular.module('crossoverControllers', []);
 
-crossoverControllers.controller('RowListCtrl', ['$scope', 'Phone',
+crossoverControllers.controller('RowListCtrl', ['$scope', 'Row',
   function($scope, Row) {
     $scope.phones = Row.query();
     $scope.orderProp = 'age';
@@ -12,8 +12,8 @@ crossoverControllers.controller('RowListCtrl', ['$scope', 'Phone',
 
 crossoverControllers.controller('RowDetailCtrl', ['$scope', '$routeParams', 'Row',
   function($scope, $routeParams, Row) {
-    $scope.phone = Row.get({phoneId: $routeParams.rowId}, function(row) {
-      $scope.mainImageUrl = phone.images[0];
+    $scope.phone = Row.get({rowId: $routeParams.rowId}, function(row) {
+      $scope.mainImageUrl = row.images[0];
     });
 
     $scope.setImage = function(imageUrl) {

@@ -5,20 +5,64 @@
     "owner": "",
     "timeStarted": "",
     "state": "Pending",
-    "metric": {},
-    "build": {},
-    "unitTest": {},
-    "functionTest": {}
+    "metric": {"test":64,"maintainbility":53,"security":64,"workmanship":72},
+    "build": {"debug":"2014-04-17T10:46:00.00","release":"2014-04-17T10:46:00.00"},
+    "unitTest": {"p1":142,"p2":10,"testPassed":"73%","codeCovered":"76%"},
+    "functionalTest": {"p1":4321,"p2":2145,"testPassed":"68%","codeCovered":"23%"}
   },
   {
     "id": "432462",
-    "icon": "",
+    "icon": "icon-lock",
     "owner": "jtuck",
     "timeStarted": "2014-04-18T12:12:00.00",
     "state": "Running",
-    "metric": {},
-    "build": {},
-    "unitTest": {},
-    "functionTest": {}
+    "metric": {"test":64,"maintainbility":53,"security":64,"workmanship":72},
+    "build": {"debug":"2014-04-17T10:46:00.00","release":"2014-04-17T10:46:00.00"},
+    "unitTest": {"p1":142,"p2":10,"testPassed":"73%","codeCovered":"76%"},
+    "functionalTest": {"p1":4321,"p2":2145,"testPassed":"68%","codeCovered":"23%"}
+  },
+  {
+    "id": "432461",
+    "icon": "",
+    "owner": "samy",
+    "timeStarted": "2014-04-18T10:53:00.00",
+    "state": "Rejected",
+    "metric": {"test":64,"maintainbility":53,"security":64,"workmanship":72},
+    "build": {"debug":"2014-04-17T10:46:00.00","release":"2014-04-17T10:46:00.00"},
+    "unitTest": {"p1":142,"p2":10,"testPassed":"73%","codeCovered":"76%"},
+    "functionalTest": {"p1":4321,"p2":2145,"testPassed":"68%","codeCovered":"23%"}
+  },
+  {
+    "id": "Ternox-R1_1235",
+    "icon": "",
+    "owner": "",
+    "timeStarted": "2014-04-18T12:12:00.00",
+    "state": "Complete",
+    "metric": {"test":64,"maintainbility":53,"security":64,"workmanship":72},
+    "build": {"debug":"2014-04-17T10:46:00.00","release":"2014-04-17T10:46:00.00"},
+    "unitTest": {"p1":142,"p2":10,"testPassed":"73%","codeCovered":"76%"},
+    "functionalTest": {"p1":4321,"p2":2145,"testPassed":"68%","codeCovered":"23%"}
+  },
+  {
+    "id": "432460",
+    "icon": "",
+    "owner": "samy",
+    "timeStarted": "2014-04-17T07:51:00.00",
+    "state": "Rejected",
+    "metric": {"test":64,"maintainbility":53,"security":64,"workmanship":72},
+    "build": {"debug":"2014-04-17T10:46:00.00","release":"2014-04-17T10:46:00.00"},
+    "unitTest": {"p1":142,"p2":10,"testPassed":"73%","codeCovered":"76%"},
+    "functionalTest": {"p1":4321,"p2":2145,"testPassed":"68%","codeCovered":"23%"}
+  },
+  {
+    "id": "432459",
+    "icon": "",
+    "owner": "samy",
+    "timeStarted": "2014-04-17T07:51:00.00",
+    "state": "Accepted",
+    "metric": {"test":64,"maintainbility":53,"security":64,"workmanship":72},
+    "build": {"debug":"2014-04-17T10:46:00.00","release":"2014-04-17T10:46:00.00"},
+    "unitTest": {"p1":142,"p2":10,"testPassed":"73%","codeCovered":"76%"},
+    "functionalTest": {"p1":4321,"p2":2145,"testPassed":"68%","codeCovered":"23%"}
   }
 ]

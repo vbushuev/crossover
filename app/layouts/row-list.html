@@ -1,27 +1,33 @@
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-2">
-      <!--Sidebar content-->
-
-      Search: <input ng-model="query">
-      Sort by:
-      <select ng-model="orderProp">
-        <option value="name">Alphabetical</option>
-        <option value="age">Newest</option>
-      </select>
-
-    </div>
-    <div class="col-md-10">
-      <!--Body content-->
-
-      <ul class="rows">
-        <li ng-repeat="row in rows | filter:query | orderBy:orderProp" class="thumbnail row-listing">
-          <a href="#/rows/{{row.id}}" class="thumb"><img ng-src="{{row.icon}}"/></a>
-          <a href="#/rows/{{row.id}}">{{row.owner}}</a>
-          <p>{{row.timeStarted}}</p>
-        </li>
-      </ul>
-
-    </div>
-  </div>
+  <ul class="rows">
+    <li class="row header">
+      <span class="col size-3x">Changelist / Build</span>
+      <span class="col">Owner</span>
+      <span class="col size-3x">Time Started</span>
+      <span class="col">State</span>
+      <span class="col size-2x">Metrics</span>
+      <span class="col size-2x">Build</span>
+      <span class="col size-2x">Unit test</span>
+      <span class="col size-2x">Functional test</span>
+    </li>
+    <li ng-repeat="row in rows | filter:query | orderBy:orderProp" class="row {{row.state}}">
+      <span ng-click="showDetails(row.id)" class="col size-3x"><i class="{{row.icon}} iconsize-2x"></i> {{row.id}}</span>
+      <span class="col">{{row.owner}}</span>
+      <span class="col size-3x">{{row.timeStarted|date:"MM/dd/yyyy hh:mma"}}</span>
+      <span class="col">{{row.state}}</span>
+      <span class="col size-2x">{{row.metric.test}}</span>
+      <span class="col size-2x">{{row.build.debug}}</span>
+      <span class="col size-2x">{{row.unitTest.testPassed}}</span>
+      <span class="col size-2x">{{row.functionalTest.testPassed}}</span>
+    </li>
+  </ul>
 </div>
+<script type="text/javascript">
+/*(function(){
+  $(".row .span").on("click",function(){
+    console.debug($(this).text()+" Clicked");
+    $(".row").removeClass("details");
+    $(this).parent(".row").addClass("details");
+  })
+})();*/
+</script>

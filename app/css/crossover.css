@@ -1,6 +1,6 @@
 @font-face {
     font-family: Lato;
-    src: url(../fonts/Lato-Regular.ttf);
+    src: url(../fonts/Lato-Light.ttf);
 }
 
 html, body {
@@ -13,42 +13,14 @@ body {
     width: 100%;
     color:rgba(40,40,40,1);
     display: table;
-    font-weight: 100;
     font-family: 'Lato';
+    font-weight: 100;
+    font-size: 10pt;
 }
 i{
   text-decoration: none;
   font-style: normal;
 }
-.sidebar{
-  text-align: center;
-  display: table-row;
-  width: 100%;
-  height: 2em;
-  vertical-align: middle;
-}
-.container {
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.content {
-    text-align: center;
-    /*display: inline-block;*/
-}
-
-.title {
-    font-size: 96px;
-    margin-bottom: 40px;
-    color: rgba(93,101,105,1);
-}
-
-.quote {
-    font-size: 24px;
-    color: rgba(93,101,105,1);
-}
-
 a{
   text-decoration: none;
   color: rgba(106,168,79,.6);
@@ -57,4 +29,70 @@ a{
 }
 a:hover{
   color: rgba(106,168,79,1);
+}
+ul.rows{
+  list-style: none;
+}
+.row{
+  margin:4px;
+  display: block;
+  border: solid 1px rgba(0,0,0,.3);
+  border-radius: 4px;
+}
+.row.header{
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.col{
+  display: inline-block;
+  width:58px;
+  padding:8px;
+  cursor: pointer;
+}
+.size-2x{
+  width:116px;
+}
+.size-3x{
+  width:174px;
+}
+.detail .col{
+  display: block;
+}
+
+
+.Running{
+  color:rgb(181,157,218);
+  border-color:rgb(181,157,218);
+}
+.Running:hover,.Running:active{
+  background-color: rgba(181,157,218,.1);
+}
+.Pending{
+  color:rgb(156,153,153);
+  border-color: rgb(156,153,153);
+}
+.Pending:hover{
+  background-color: rgba(156,153,153,.1);
+}
+.Accepted{
+  color:rgb(247,209,88);
+  border-color: rgb(247,209,88);
+}
+.Accepted:hover{
+  background-color: rgba(247,209,88,.1);
+}
+.Complete{
+  color:rgb(208,187,79);
+  border-color: rgb(208,187,79);
+}
+.Complete:hover{
+  background-color: rgba(208,187,79,.1);
+}
+.Rejected{
+  color:rgb(225,111,102);
+  border-color: rgb(225,111,102);
+}
+.Rejected:hover{
+  background-color: rgba(225,111,102,.1);
 }

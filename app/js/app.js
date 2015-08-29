@@ -7,7 +7,9 @@ var crossoverApp = angular.module('crossoverApp', [
   'crossoverAnimations',
   'crossoverControllers',
   'crossoverFilters',
-  'crossoverServices'
+  'crossoverServices',
+  'crossoverDirectives',
+  'chart.js'
 ]);
 
 crossoverApp.config(['$routeProvider',

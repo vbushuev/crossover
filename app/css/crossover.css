@@ -2,11 +2,9 @@
     font-family: Lato;
     src: url(../fonts/Lato-Light.ttf);
 }
-
 html, body {
     height: 100%;
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -32,6 +30,7 @@ a:hover{
 }
 ul.rows{
   list-style: none;
+  width:1190px;
 }
 .row{
   margin:4px;
@@ -56,43 +55,94 @@ ul.rows{
 .size-3x{
   width:174px;
 }
-.detail .col{
-  display: block;
+.charts{
+    display: none;
+    margin: 8px;
+    padding: 8px;
+    position: relative;
+}
+.chart{
+    position: relative;
+    display: block;
+    float:left;
+    margin: 4px;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 2px;
+    padding: 2px 8px;
+    width:216px;
+    height: 216px;
+    box-shadow: 4px 4px 4px grey;
+    -moz-box-shadow: 4px 4px 4px grey;
+    -webkit-box-shadow: 4px 4px 4px grey;
+}
+
+.chart h1.title{
+    font-size: 14pt;
+    font-weight: bold;
+    margin:2px;
+}
+.chart img{
+    margin: 0 8px;
+    width: 72px;
+}
+.chart h2.footer{
+    position: absolute;
+    top: 174px;
+    margin: 2px;
+    font-size: 12pt;
+    font-weight: bold;
+    color:rgb(0,0,0);
+}
+.chart text.onimg{
+    stroke:rgb(255, 255, 255)!important;
+    font-size: 14pt;
+}
+.chart text.capture{
+    stroke:rgb(0, 0, 0)!important;
 }
 
 
-.Running{
-  color:rgb(181,157,218);
-  border-color:rgb(181,157,218);
+.chartjs{
+    position: absolute;
+    top:42px;
+    left:4px;
+    margin: 0;
+    width: 112px;
+    height:112px;
+    padding: 0;
 }
-.Running:hover,.Running:active{
-  background-color: rgba(181,157,218,.1);
+.chartjs *{
+    border:none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
 }
-.Pending{
-  color:rgb(156,153,153);
-  border-color: rgb(156,153,153);
+.capital{
+    position: absolute;
+    top:74px;
+    right:8px;
+    font-size: 25pt;
 }
-.Pending:hover{
-  background-color: rgba(156,153,153,.1);
+.sub{
+    font-size: 10pt;
+    color:rgb(0,0,0);
 }
-.Accepted{
-  color:rgb(247,209,88);
-  border-color: rgb(247,209,88);
+.covered{
+    position: absolute;
+    bottom:8px;
 }
-.Accepted:hover{
-  background-color: rgba(247,209,88,.1);
+.chart.noframe{
+    border:none;
+    box-shadow: none;
+    background-color: rgba(255,255,255,.0);
+    padding:12px;
 }
-.Complete{
-  color:rgb(208,187,79);
-  border-color: rgb(208,187,79);
+.noframe .status{
+    margin:6px;
+    margin-top: 12px;
+    font-size: 18pt;
 }
-.Complete:hover{
-  background-color: rgba(208,187,79,.1);
-}
-.Rejected{
-  color:rgb(225,111,102);
-  border-color: rgb(225,111,102);
-}
-.Rejected:hover{
-  background-color: rgba(225,111,102,.1);
-}
+.noframe .result{}
+.noframe .done{}
+.noframe .action{}

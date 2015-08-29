@@ -1,0 +1,72 @@
+.details .drawable{
+  display: none;
+}
+.details .charts{
+  display: block;
+}
+/*
+ * state colors
+ * running state
+ */
+.Running{
+  color:rgb(181,157,218);
+  border-color:rgb(181,157,218);
+}
+.Running svg *{
+  stroke:rgb(181,157,218);
+}
+.Running:hover,.Running:active{
+  background-color: rgba(181,157,218,.1);
+}
+/*
+ * pending state
+ */
+.Pending{
+  color:rgb(156,153,153);
+  border-color: rgb(156,153,153);
+}
+.Pending svg *{
+  stroke:rgb(156,153,153);
+}
+.Pending:hover{
+  background-color: rgba(156,153,153,.1);
+}
+/*
+ * Accepted state
+ */
+.Accepted{
+  color:rgb(247,209,88);
+  border-color: rgb(247,209,88);
+}
+.Accepted svg *{
+    stroke: rgb(247,209,88);
+}
+.Accepted:hover{
+  background-color: rgba(247,209,88,.1);
+}
+/*
+ * Complete state
+ */
+.Complete{
+  color: rgb(208,187,79);
+  border-color: rgb(208,187,79);
+}
+.Complete:hover{
+  background-color: rgba(208,187,79,.1);
+}
+.Complete svg *{
+    stroke: rgb(208,187,79);
+}
+/*
+ * Rejected state
+ */
+.Rejected{
+  color: rgb(225,111,102);
+  border-color: rgb(225,111,102);
+}
+.Rejected:hover{
+  background-color: rgba(225,111,102,.1);
+}
+.Rejected svg *{
+    stroke: rgb(225,111,102);
+}

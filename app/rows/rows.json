@@ -1,7 +1,7 @@
 [
   {
     "id": "Ternox-R1_1235",
-    "icon": "",
+    "icon": "img/computer-1.svg",
     "owner": "",
     "timeStarted": "",
     "state": "Pending",
@@ -12,7 +12,7 @@
   },
   {
     "id": "432462",
-    "icon": "icon-lock",
+    "icon": "img/wall-icon.png",
     "owner": "jtuck",
     "timeStarted": "2014-04-18T12:12:00.00",
     "state": "Running",
@@ -23,7 +23,7 @@
   },
   {
     "id": "432461",
-    "icon": "",
+    "icon": "img/wall-icon.png",
     "owner": "samy",
     "timeStarted": "2014-04-18T10:53:00.00",
     "state": "Rejected",
@@ -34,7 +34,7 @@
   },
   {
     "id": "Ternox-R1_1235",
-    "icon": "",
+    "icon": "img/computer-1.svg",
     "owner": "",
     "timeStarted": "2014-04-18T12:12:00.00",
     "state": "Complete",
@@ -45,7 +45,7 @@
   },
   {
     "id": "432460",
-    "icon": "",
+    "icon": "img/wall-icon.png",
     "owner": "samy",
     "timeStarted": "2014-04-17T07:51:00.00",
     "state": "Rejected",
@@ -56,7 +56,7 @@
   },
   {
     "id": "432459",
-    "icon": "",
+    "icon": "img/wall-icon.png",
     "owner": "samy",
     "timeStarted": "2014-04-17T07:51:00.00",
     "state": "Accepted",

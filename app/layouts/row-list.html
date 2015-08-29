@@ -10,7 +10,7 @@
       <span class="col size-2x">Unit test</span>
       <span class="col size-2x">Functional test</span>
     </li>
-    <li ng-repeat="row in rows | filter:query | orderBy:orderProp" class="row {{row.state}}">
+    <li ng-repeat="row in rows | filter:query | orderBy:orderProp" class="row short {{row.state}}">
       <span toggle-class="class" class="col size-3x"><img src="{{row.icon}}" width="32px"/> {{row.id}}</span>
       <span class="col">{{row.owner}}</span>
       <span class="col size-3x">{{row.timeStarted|date:"MM/dd/yyyy hh:mma"}}</span>
